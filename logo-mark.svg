@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 150" width="240" height="150" role="img" aria-label="English Mallorca mark">
+  <path d="M40 24 H200 a16 16 0 0 1 16 16 V92 a16 16 0 0 1 -16 16 H92 l-22 22 v-22 H40 a16 16 0 0 1 -16 -16 V40 a16 16 0 0 1 16 -16 Z"
+        fill="none" stroke="#1a2b4a" stroke-width="6"/>
+  <text x="120" y="88" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="58" font-weight="700">
+    <tspan fill="#1a2b4a">E</tspan><tspan fill="#b8893a">M</tspan>
+  </text>
+</svg>
