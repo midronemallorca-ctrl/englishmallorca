@@ -208,6 +208,30 @@ input, textarea, select { font: inherit; }
 .nav__cta::after { display: none !important; }
 .nav__cta:hover { background-color: var(--navy-light) !important; }
 
+/* ---- Language toggle ---- */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+  font-size: .8125rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--navy);
+  padding: .375rem .75rem;
+  border-radius: 50px;
+  border: 1.5px solid var(--border);
+  background: transparent;
+  transition: border-color var(--transition), background-color var(--transition);
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.lang-toggle:hover { border-color: var(--gold); background-color: var(--cream); }
+.lang-toggle:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.lang-opt { opacity: .35; transition: opacity var(--transition), color var(--transition); }
+.lang-opt--active { opacity: 1; color: var(--gold); }
+.lang-sep { opacity: .25; font-weight: 400; }
+
 /* Hamburger */
 .nav__toggle {
   display: none;

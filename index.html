@@ -28,12 +28,18 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__menu" id="nav-menu" role="list">
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#clases">Clases</a></li>
-        <li><a href="#precios">Precios</a></li>
-        <li><a href="#ubicacion">Ubicación</a></li>
-        <li><a href="#contacto" class="nav__cta">Contacto</a></li>
+        <li><a href="#sobre-mi"  data-i18n="nav-about">Sobre mí</a></li>
+        <li><a href="#clases"    data-i18n="nav-classes">Clases</a></li>
+        <li><a href="#precios"   data-i18n="nav-pricing">Precios</a></li>
+        <li><a href="#ubicacion" data-i18n="nav-location">Ubicación</a></li>
+        <li><a href="#contacto"  class="nav__cta" data-i18n="nav-contact">Contacto</a></li>
       </ul>
+      <!-- Language toggle -->
+      <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma / Canvia l'idioma">
+        <span id="lang-es" class="lang-opt lang-opt--active">ES</span>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <span id="lang-ca" class="lang-opt">CA</span>
+      </button>
     </nav>
   </header>
 
@@ -47,10 +53,10 @@
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="container hero__content">
         <img src="/logo.svg" alt="English Mallorca" class="hero__logo">
-        <h1 class="hero__title">Clases de Inglés<br>en Manacor</h1>
-        <p class="hero__subtitle">Profesora nativa británica &middot; Clases personalizadas para todas las edades</p>
-        <p class="hero__intro">Online o presenciales en Manacor y alrededores. Niños, adultos, conversación y refuerzo escolar.</p>
-        <a href="#contacto" class="btn btn--primary">Solicitar información</a>
+        <h1 class="hero__title" data-i18n-html="hero-title">Clases de Inglés<br>en Manacor</h1>
+        <p class="hero__subtitle" data-i18n="hero-subtitle">Profesora nativa británica · Clases personalizadas para todas las edades</p>
+        <p class="hero__intro"   data-i18n="hero-intro">Online o presenciales en Manacor y alrededores. Niños, adultos, conversación y refuerzo escolar.</p>
+        <a href="#contacto" class="btn btn--primary" data-i18n="hero-cta">Solicitar información</a>
       </div>
     </section>
 
@@ -68,16 +74,16 @@
           >
           <div class="about__image-badge" aria-hidden="true">
             <span class="badge__flag">🇬🇧</span>
-            <span class="badge__text">Profesora nativa</span>
+            <span class="badge__text" data-i18n="about-badge">Profesora nativa</span>
           </div>
         </div>
         <div class="about__text">
-          <span class="section-label">Sobre mí</span>
-          <h2 id="about-heading" class="section-title">Aprender inglés puede abrirte muchas puertas</h2>
-          <p>Soy profesora nativa británica y llevo años ayudando a personas de todas las edades a aprender inglés con confianza. Más que enseñar gramática, me gusta acompañar a cada alumno en su propio camino, a su ritmo y según sus objetivos.</p>
-          <p>Cada persona aprende de una forma distinta, por eso adapto las clases a lo que cada uno necesita: desde los primeros pasos hasta mejorar la conversación, preparar un examen, reforzar el inglés del colegio o ganar soltura para el día a día y el trabajo.</p>
-          <p>Mi objetivo es que las clases sean cercanas y amenas, que pierdas el miedo a hablar y que disfrutes del proceso. Aprender un idioma debería abrir puertas, no generar agobio, y eso es justo lo que busco en cada sesión.</p>
-          <a href="#contacto" class="btn btn--secondary">Empezar ahora</a>
+          <span class="section-label" data-i18n="about-label">Sobre mí</span>
+          <h2 id="about-heading" class="section-title" data-i18n="about-heading">Aprender inglés puede abrirte muchas puertas</h2>
+          <p data-i18n="about-p1">Soy profesora nativa británica y llevo años ayudando a personas de todas las edades a aprender inglés con confianza. Más que enseñar gramática, me gusta acompañar a cada alumno en su propio camino, a su ritmo y según sus objetivos.</p>
+          <p data-i18n="about-p2">Cada persona aprende de una forma distinta, por eso adapto las clases a lo que cada uno necesita: desde los primeros pasos hasta mejorar la conversación, preparar un examen, reforzar el inglés del colegio o ganar soltura para el día a día y el trabajo.</p>
+          <p data-i18n="about-p3">Mi objetivo es que las clases sean cercanas y amenas, que pierdas el miedo a hablar y que disfrutes del proceso. Aprender un idioma debería abrir puertas, no generar agobio, y eso es justo lo que busco en cada sesión.</p>
+          <a href="#contacto" class="btn btn--secondary" data-i18n="about-cta">Empezar ahora</a>
         </div>
       </div>
     </section>
@@ -86,91 +92,91 @@
     <section class="classes section section--cream" id="clases" aria-labelledby="classes-heading">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Lo que ofrezco</span>
-          <h2 id="classes-heading" class="section-title">Clases disponibles</h2>
-          <p class="section-subtitle">Adapto cada clase a tus necesidades y a tu nivel, ya sea de forma presencial en Manacor o por videollamada desde donde estés.</p>
+          <span class="section-label" data-i18n="classes-label">Lo que ofrezco</span>
+          <h2 id="classes-heading" class="section-title" data-i18n="classes-heading">Clases disponibles</h2>
+          <p class="section-subtitle" data-i18n="classes-subtitle">Adapto cada clase a tus necesidades y a tu nivel, ya sea de forma presencial en Manacor o por videollamada desde donde estés.</p>
         </div>
         <div class="cards-grid">
 
           <!-- Card 1: Niños -->
           <article class="card" tabindex="0">
             <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="24" cy="14" r="7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
                 <path d="M10 42c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
                 <path d="M32 20l3 3-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M16 6l2 2-2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
-            <h3 class="card__title">Inglés para niños</h3>
-            <p class="card__desc">Clases dinámicas y motivadoras adaptadas a la edad y al nivel escolar, con juegos y actividades que hacen el aprendizaje divertido.</p>
+            <h3 class="card__title" data-i18n="c1-title">Inglés para niños</h3>
+            <p class="card__desc"   data-i18n="c1-desc">Clases dinámicas y motivadoras adaptadas a la edad y al nivel escolar, con juegos y actividades que hacen el aprendizaje divertido.</p>
           </article>
 
           <!-- Card 2: Adultos -->
           <article class="card" tabindex="0">
             <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="8" y="10" width="32" height="26" rx="3" stroke="currentColor" stroke-width="2.5"/>
                 <path d="M16 22h16M16 28h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
                 <circle cx="36" cy="38" r="6" fill="var(--cream)" stroke="currentColor" stroke-width="2.5"/>
                 <path d="M36 35v3l2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
-            <h3 class="card__title">Inglés para adultos</h3>
-            <p class="card__desc">Para mejorar en el trabajo, viajar con más soltura o simplemente alcanzar ese nivel que llevas tiempo queriendo conseguir.</p>
+            <h3 class="card__title" data-i18n="c2-title">Inglés para adultos</h3>
+            <p class="card__desc"   data-i18n="c2-desc">Para mejorar en el trabajo, viajar con más soltura o simplemente alcanzar ese nivel que llevas tiempo queriendo conseguir.</p>
           </article>
 
           <!-- Card 3: Conversación -->
           <article class="card" tabindex="0">
             <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 12a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H20l-8 6v-6H12a4 4 0 0 1-4-4V12Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
                 <path d="M20 36v2a4 4 0 0 0 4 4h8l8-6v-6a4 4 0 0 0-1.2-2.88" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M16 18h12M16 22h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               </svg>
             </div>
-            <h3 class="card__title">Conversación en inglés</h3>
-            <p class="card__desc">Pierde el miedo a hablar. Sesiones de conversación libre o por temas para ganar fluidez, confianza y naturalidad.</p>
+            <h3 class="card__title" data-i18n="c3-title">Conversación en inglés</h3>
+            <p class="card__desc"   data-i18n="c3-desc">Pierde el miedo a hablar. Sesiones de conversación libre o por temas para ganar fluidez, confianza y naturalidad.</p>
           </article>
 
           <!-- Card 4: Refuerzo escolar -->
           <article class="card" tabindex="0">
             <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 38V14a2 2 0 0 1 2-2h24a2 2 0 0 1 2 2v24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
                 <path d="M6 38h36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
                 <path d="M20 38V28h8v10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M16 18h4M28 18h4M16 23h4M28 23h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               </svg>
             </div>
-            <h3 class="card__title">Refuerzo escolar</h3>
-            <p class="card__desc">Apoyo directo con los contenidos del colegio o instituto: deberes, exámenes, gramática y todo lo que se necesite reforzar.</p>
+            <h3 class="card__title" data-i18n="c4-title">Refuerzo escolar</h3>
+            <p class="card__desc"   data-i18n="c4-desc">Apoyo directo con los contenidos del colegio o instituto: deberes, exámenes, gramática y todo lo que se necesite reforzar.</p>
           </article>
 
           <!-- Card 5: Online -->
           <article class="card" tabindex="0">
             <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="8" y="10" width="32" height="22" rx="3" stroke="currentColor" stroke-width="2.5"/>
                 <path d="M16 32v4M32 32v4M12 36h24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
                 <circle cx="24" cy="21" r="6" stroke="currentColor" stroke-width="2"/>
                 <path d="M24 15v2M24 25v2M18 21h2M28 21h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </div>
-            <h3 class="card__title">Clases online</h3>
-            <p class="card__desc">Desde cualquier lugar y con total flexibilidad horaria. Las mismas clases personalizadas, cómodamente desde casa.</p>
+            <h3 class="card__title" data-i18n="c5-title">Clases online</h3>
+            <p class="card__desc"   data-i18n="c5-desc">Desde cualquier lugar y con total flexibilidad horaria. Las mismas clases personalizadas, cómodamente desde casa.</p>
           </article>
 
           <!-- Card 6: Presenciales -->
           <article class="card" tabindex="0">
             <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M24 6C17.373 6 12 11.373 12 18c0 9 12 24 12 24s12-15 12-24c0-6.627-5.373-12-12-12Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
                 <circle cx="24" cy="18" r="4" stroke="currentColor" stroke-width="2.5"/>
               </svg>
             </div>
-            <h3 class="card__title">Clases presenciales</h3>
-            <p class="card__desc">En Manacor y alrededores. Clases en casa del alumno o en un espacio acordado, con pequeño suplemento de desplazamiento.</p>
+            <h3 class="card__title" data-i18n="c6-title">Clases presenciales</h3>
+            <p class="card__desc"   data-i18n="c6-desc">En Manacor y alrededores. Clases en casa del alumno o en un espacio acordado, con pequeño suplemento de desplazamiento.</p>
           </article>
 
         </div>
@@ -181,8 +187,8 @@
     <section class="pricing section" id="precios" aria-labelledby="pricing-heading">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Tarifas</span>
-          <h2 id="pricing-heading" class="section-title">Precios</h2>
+          <span class="section-label" data-i18n="pricing-label">Tarifas</span>
+          <h2 id="pricing-heading" class="section-title" data-i18n="pricing-heading">Precios</h2>
         </div>
         <div class="pricing__wrap">
           <div class="pricing__card">
@@ -199,31 +205,31 @@
             <div class="pricing__details">
               <div class="pricing__main">
                 <span class="pricing__amount">30€</span>
-                <span class="pricing__period">/ hora</span>
+                <span class="pricing__period" data-i18n="pricing-period">/ hora</span>
               </div>
               <ul class="pricing__features" role="list">
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  Clases online o presenciales
+                  <span data-i18n="pricing-f1">Clases online o presenciales</span>
                 </li>
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  Todas las edades y niveles
+                  <span data-i18n="pricing-f2">Todas las edades y niveles</span>
                 </li>
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  Clases adaptadas y personalizadas
+                  <span data-i18n="pricing-f3">Clases adaptadas y personalizadas</span>
                 </li>
                 <li>
                   <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  Profesora nativa británica
+                  <span data-i18n="pricing-f4">Profesora nativa británica</span>
                 </li>
               </ul>
               <div class="pricing__note">
                 <svg class="note-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
-                +5€ por desplazamiento fuera de Manacor
+                <span data-i18n="pricing-note">+5€ por desplazamiento fuera de Manacor</span>
               </div>
-              <a href="#contacto" class="btn btn--primary">Solicitar información</a>
+              <a href="#contacto" class="btn btn--primary" data-i18n="pricing-cta">Solicitar información</a>
             </div>
           </div>
         </div>
@@ -234,18 +240,18 @@
     <section class="location section section--cream" id="ubicacion" aria-labelledby="location-heading">
       <div class="container location__grid">
         <div class="location__text">
-          <span class="section-label">Dónde doy clases</span>
-          <h2 id="location-heading" class="section-title">Manacor y alrededores</h2>
-          <p>Las clases presenciales se imparten en Manacor y pueblos cercanos de Mallorca. Si vives fuera de Manacor, puedo desplazarme a tu zona con un pequeño suplemento de <strong>+5€</strong> por desplazamiento.</p>
-          <p>¿Vives lejos o prefieres la comodidad de casa? Las <strong>clases online</strong> tienen exactamente el mismo contenido y calidad, con total flexibilidad horaria para adaptarnos a tu agenda.</p>
+          <span class="section-label" data-i18n="loc-label">Dónde doy clases</span>
+          <h2 id="location-heading" class="section-title" data-i18n="loc-heading">Manacor y alrededores</h2>
+          <p data-i18n-html="loc-p1">Las clases presenciales se imparten en Manacor y pueblos cercanos de Mallorca. Si vives fuera de Manacor, puedo desplazarme a tu zona con un pequeño suplemento de <strong>+5€</strong> por desplazamiento.</p>
+          <p data-i18n-html="loc-p2">¿Vives lejos o prefieres la comodidad de casa? Las <strong>clases online</strong> tienen exactamente el mismo contenido y calidad, con total flexibilidad horaria para adaptarnos a tu agenda.</p>
           <div class="location__badges">
             <span class="location__badge">
               <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
-              Manacor y alrededores
+              <span data-i18n="loc-badge1">Manacor y alrededores</span>
             </span>
             <span class="location__badge">
               <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/></svg>
-              Clases online disponibles
+              <span data-i18n="loc-badge2">Clases online disponibles</span>
             </span>
           </div>
         </div>
@@ -266,9 +272,9 @@
     <section class="contact section" id="contacto" aria-labelledby="contact-heading">
       <div class="container contact__grid">
         <div class="contact__intro">
-          <span class="section-label">Contacto</span>
-          <h2 id="contact-heading" class="section-title">Ponte en contacto</h2>
-          <p>¿Tienes alguna pregunta o quieres empezar? Escríbeme y te respondo en breve. No hay ningún compromiso.</p>
+          <span class="section-label" data-i18n="contact-label">Contacto</span>
+          <h2 id="contact-heading" class="section-title" data-i18n="contact-heading">Ponte en contacto</h2>
+          <p data-i18n="contact-p">¿Tienes alguna pregunta o quieres empezar? Escríbeme y te respondo en breve. No hay ningún compromiso.</p>
           <div class="contact__details">
             <div class="contact__detail">
               <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
@@ -276,7 +282,7 @@
             </div>
             <div class="contact__detail">
               <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/></svg>
-              <span>Clases online disponibles</span>
+              <span data-i18n="contact-online">Clases online disponibles</span>
             </div>
           </div>
           <!-- TODO: replace with a real photo (desk with open notebook, pen and plant, warm light) -->
@@ -297,13 +303,14 @@
             <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 
             <div class="form-group">
-              <label for="nombre">Nombre <span class="required" aria-hidden="true">*</span></label>
+              <label for="nombre"><span data-i18n="form-name">Nombre</span> <span class="required" aria-hidden="true">*</span></label>
               <input
                 type="text"
                 id="nombre"
                 name="name"
                 autocomplete="name"
                 required
+                data-i18n-placeholder="form-name-ph"
                 placeholder="Tu nombre"
               >
               <span class="form-error" id="nombre-error" role="alert" aria-live="polite"></span>
@@ -323,12 +330,13 @@
             </div>
 
             <div class="form-group">
-              <label for="mensaje">Mensaje <span class="required" aria-hidden="true">*</span></label>
+              <label for="mensaje"><span data-i18n="form-message-label">Mensaje</span> <span class="required" aria-hidden="true">*</span></label>
               <textarea
                 id="mensaje"
                 name="message"
                 rows="6"
                 required
+                data-i18n-placeholder="form-msg-placeholder"
                 placeholder="Cuéntame dónde te gustaría dar las clases (en Manacor, otra localidad de Mallorca u online), la edad del alumno/a, y cualquier otra consulta que tengas. ¡No hay preguntas tontas!"
               ></textarea>
               <span class="form-error" id="mensaje-error" role="alert" aria-live="polite"></span>
@@ -338,12 +346,12 @@
             <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" aria-hidden="true">
 
             <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
-              <span class="btn__text">Enviar mensaje</span>
+              <span class="btn__text" data-i18n="form-submit">Enviar mensaje</span>
               <span class="btn__loading" aria-hidden="true" hidden>
                 <svg class="spinner" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-dasharray="60" stroke-dashoffset="20"/>
                 </svg>
-                Enviando…
+                <span data-i18n="form-sending">Enviando…</span>
               </span>
             </button>
 
@@ -353,8 +361,8 @@
                 <path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
               <div>
-                <strong>¡Mensaje enviado!</strong>
-                <p>Gracias por escribirme. Te responderé lo antes posible.</p>
+                <strong data-i18n="success-title">¡Mensaje enviado!</strong>
+                <p data-i18n="success-p">Gracias por escribirme. Te responderé lo antes posible.</p>
               </div>
             </div>
 
@@ -364,8 +372,8 @@
                 <path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               </svg>
               <div>
-                <strong>Algo ha ido mal.</strong>
-                <p>Por favor, inténtalo de nuevo o escríbeme directamente.</p>
+                <strong data-i18n="error-title">Algo ha ido mal.</strong>
+                <p data-i18n="error-p">Por favor, inténtalo de nuevo o escríbeme directamente.</p>
               </div>
             </div>
 
@@ -382,7 +390,7 @@
       <a href="#top" class="footer__logo" aria-label="English Mallorca — volver arriba">
         <img src="/logo.svg" alt="English Mallorca" class="footer__logo-img">
       </a>
-      <p class="footer__copy">&copy; 2026 English Mallorca. Todos los derechos reservados.</p>
+      <p class="footer__copy" data-i18n="footer-copy">&copy; 2026 English Mallorca. Todos los derechos reservados.</p>
       <a href="#top" class="footer__back-top" aria-label="Volver arriba">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
